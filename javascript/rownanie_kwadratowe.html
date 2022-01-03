@@ -24,21 +24,21 @@
             let a=parseInt(document.getElementById("a").value);
             let b=parseInt(document.getElementById("b").value);
             let c=parseInt(document.getElementById("c").value);
-            if(a==0){
+            if(a==0||a==null||b==null||c==null){
                 document.getElementById("kom").innerHTML="Podaj poprawne parametry. a&ne;0";
             }
-             
+
             else{
             document.getElementById("kom").innerHTML='Równanie '+piszrownanie(a,b,c)+"<br>Lizcba rozwiązań: "+ilerozw(a,b,c)+"<br>"+ilerozw1(a,b,c);}
 
 
 
         }
-    
-    
+
+
     </script>
     <script src="../stopka.js"></script>
-    
+
 
 
 </body>
