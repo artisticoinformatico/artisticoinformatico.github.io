@@ -1,20 +1,77 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3TI - index</title>
-    <link rel="stylesheet" href="mniejsyfu.css">
-  </head> 
-<body>
-    <script src="menu.js"></script>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ankieta lvl informatyk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+      .asg {
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        color: #c5699c;
+      }
+      .typowybutton {
+        background-color: #8dc776;
+        border: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        color: #0f1315;
+        text-align: center;
+        padding: 15px 32px;
+        border-radius: 10px;
+        transition-duration: 0.4s;
+      }
+      .typowybutton:hover {
+        transition-duration: 0.4s;
+        background-color: #0f1315;
+        color: #8dc776;
+      }
 
-    <section>
-      <p>index tududu tududu</p>
-      
-    </section>
+      .centertext {
+        text-align: center;
+      }
 
-    <script src="stopka.js"></script>
-</body>
+    </style>
+  </head>
+  <body style="background-color:#0f1315;">
+    <h1 class="asg" style="font-size: 300%">Co pierwsze?</h1>
+    <div class="centertext">
+    <input type="button" onclick="mleko()" class="typowybutton" value="Mleko">
+    <input type="button" onclick="platki()" class="typowybutton" value="Płatki">
+    <h2 class="asg" id="odpowiedz"></h2>
+
+    <a href="https://www.just-fucking-google.it?s=jak%20zawi%C4%85za%C4%87%20link%C4%99%3F&e=wherexyz">
+      <h2 class="asg" id="link" ></h2>
+    </a>
+
+    <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <h6 style="background-color: #0f1315; color:black;text-decoration: none;" id="rick"></h6>
+    </a>
+
+    </div>
+
+    <script>
+
+      function mleko(){
+      document.getElementById("odpowiedz").innerHTML = 'Jak ty żyjesz człowieku?';
+      document.getElementById("link").innerHTML = 'Dobra, kliknij tu';
+      document.getElementById("rick").innerHTML = '';
+
+      };
+      function platki() {
+        document.getElementById("odpowiedz").innerHTML = 'Szanujący się człowiek';
+        document.getElementById("link").innerHTML = '';
+        document.getElementById("rick").innerHTML = 'o coś tu jest';
+      };
+
+    </script>
+
+
+
+
+  </body>
 </html>
+
+
+<!--style="color:#c5699c; font-family: 'Ubuntu', sans-serif; font-size: 300%; text-align:center;"-->
+        <!-- font-size: 300%; -->
