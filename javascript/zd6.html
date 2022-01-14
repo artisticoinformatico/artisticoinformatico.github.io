@@ -8,19 +8,21 @@
 </head>
 <body>
     
+    <h1>pomiary temperatury</h1>
+    pomiary; 
+
     <script>
-        let tab=[2,3,4,5,-6,4,5,5,5,-5,4,-4,6,5];
-        let oceny=new Array(10);
+        let temp=[2,3,-50,43];
 
-        for(let i=0; i<tab.length; i++){
-            document.write(tab[i]+', ');
-        }
+        for(let i=0; i<temp.length-1; i++) {
+            document.write(temp[i]+', ');
+        } 
+        document.write(temp[temp.length-1]+'.');
 
-        document.write('<br>');
-
-        for(let i of tab){
-            document.write(i+', ');
-        }
+        let suma=0;
+        for(let i=0; i<temp.length; i++){suma+=temp[i]}
+        document.write('<br><br>średnia temperatura: '+(suma/temp.length).toFixed(4))
+      
 
 
 
