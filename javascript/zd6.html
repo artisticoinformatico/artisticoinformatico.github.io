@@ -12,17 +12,19 @@
     pomiary; 
 
     <script>
-        let temp=[2,3,-50,43];
+        let temp=[2,3,-5,-43,4,-8,7];
 
         for(let i=0; i<temp.length-1; i++) {
             document.write(temp[i]+', ');
         } 
         document.write(temp[temp.length-1]+'.');
 
-        let suma=0;
-        for(let i=0; i<temp.length; i++){suma+=temp[i]}
-        document.write('<br><br>średnia temperatura: '+(suma/temp.length).toFixed(4))
-      
+        let suma=0, max=temp[0];
+        for(let i=0; i<temp.length; i++)
+            {suma+=temp[i];
+            if(temp[i]>max) max=temp[i];}
+        document.write('<br><br>średnia temperatura: '+(suma/temp.length).toFixed(2));
+        document.write('<br><br>maksymalna temperatura: '+ max);
 
 
 
