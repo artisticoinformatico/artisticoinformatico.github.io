@@ -19,12 +19,14 @@
         } 
         document.write(temp[temp.length-1]+'.');
 
-        let suma=0, max=temp[0];
+        let suma=0, max=temp[0], min=temp[0];
         for(let i=0; i<temp.length; i++)
             {suma+=temp[i];
-            if(temp[i]>max) max=temp[i];}
+            if(temp[i]>max) max=temp[i];
+            if(temp[i]<min) min=temp[i];}
         document.write('<br><br>średnia temperatura: '+(suma/temp.length).toFixed(2));
         document.write('<br><br>maksymalna temperatura: '+ max);
+        document.write('<br><br>minimalna temperatura: '+ min);
 
 
 
