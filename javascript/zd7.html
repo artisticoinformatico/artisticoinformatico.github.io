@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    ocena: <input type="number" min="1" max="6">
+    ocena: <input type="number" min="1" max="6" id="ocena">
     <input type="button" value="dodaj ocenę" onclick="dodaj()">
     <input type="button" value="usuń ocenę" onclick="usun()">
     <p id="kom"></p>
@@ -16,8 +16,15 @@
 
 
     <script>
+        let taboceny = new Array();
         function dodaj(){
-            document.getElementById('kom').innerHTML='+'
+            let ocena=parseInt(document.getElementById('ocena').value);
+            if (ocena>=1 && ocena<=6) {taboceny.push(ocena)};
+
+            let suma=0;
+            for(let i=0; i<taboceny.length; i++) suma +=taboceny[i];
+
+            document.getElementById('kom').innerHTML='Twoje oceny: '+taboceny.join(', ')+'<br>średnia ocen: '+(suma/taboceny.length).toFixed(2)+'<br>jedynek: '+'<br>dwójek:    ';
         }
 
 
