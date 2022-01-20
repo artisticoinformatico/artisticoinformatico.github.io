@@ -30,9 +30,13 @@
 
         let minus=0, plus=0;
         for(let i=0; i<temp.lenght-1; i++)
-                {if temp[i]<0
+                {if (temp[i]<0)
                     {minus++;}
-                else if ()}
+                else if ( temp[i]>0)
+                {plus++;}}
+
+        Document.write('tEMPERAURY DODATNIE: '+plus);
+        Document.write('Temperatury ujemne: '+minus);
 
 
     </script>

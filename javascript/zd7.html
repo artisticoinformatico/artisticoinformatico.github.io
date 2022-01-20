@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    ocena: <input type="number" min="1" max="6">
+    <input type="button" value="dodaj ocenę" onclick="dodaj()">
+    <input type="button" value="usuń ocenę" onclick="usun()">
+    <p id="kom"></p>
+
+
+
+    <script>
+        function dodaj(){
+            document.getElementById('kom').innerHTML='+'
+        }
+
+
+        function usun(){
+            document.getElementById('kom').innerHTML='-'
+        }
+    </script>
+
+
+
+
+</body>
+</html>
