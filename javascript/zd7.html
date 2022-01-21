@@ -35,10 +35,12 @@
 
         function usun(){
           let ocena=parseInt(document.getElementById('ocena').value);
+          let a=0;
           if (ocena>=1 && ocena<=6) {
+            a=0;
             for(let i=0; i<taboceny.length; i++) {
-              if(taboceny[i]==ocena){taboceny.splice(i, 1); break;}
-            }
+              if(taboceny[i]==ocena){taboceny.splice(i, 1); a=1; break;} else {a++};
+            } if (a==0) {alert("nie ma takiej oceny XD")}
           }
 
           let suma=0;
