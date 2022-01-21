@@ -22,15 +22,37 @@
             if (ocena>=1 && ocena<=6) {taboceny.push(ocena)};
 
             let suma=0;
-            for(let i=0; i<taboceny.length; i++) suma +=taboceny[i];
+            let dwojki=0;
+            let jedynki=0;
+            for(let i=0; i<taboceny.length; i++) {suma +=taboceny[i]};
+            for(let i=0; i<taboceny.length; i++) {
+              if (taboceny[i] == 1) {jedynki++} else if (taboceny[i]==2) {dwojki++}
+            }
 
-            document.getElementById('kom').innerHTML='Twoje oceny: '+taboceny.join(', ')+'<br>średnia ocen: '+(suma/taboceny.length).toFixed(2)+'<br>jedynek: '+'<br>dwójek:    ';
+            document.getElementById('kom').innerHTML='Twoje oceny: '+taboceny.join(', ')+'<br>średnia ocen: '+(suma/taboceny.length).toFixed(2)+'<br>jedynek: '+jedynki+'<br>dwójek: '+dwojki;
         }
 
 
         function usun(){
-            document.getElementById('kom').innerHTML='-'
+          let ocena=parseInt(document.getElementById('ocena').value);
+          if (ocena>=1 && ocena<=6) {
+            for(let i=0; i<taboceny.length; i++) {
+              if(taboceny[i]==ocena){taboceny.splice(i, 1); break;}
+            }
+          }
+
+          let suma=0;
+          let dwojki=0;
+          let jedynki=0;
+          for(let i=0; i<taboceny.length; i++) {suma +=taboceny[i]};
+          for(let i=0; i<taboceny.length; i++) {
+            if (taboceny[i] == 1) {jedynki++} else if (taboceny[i]==2) {dwojki++}
+          }
+
+          document.getElementById('kom').innerHTML='Twoje oceny: '+taboceny.join(', ')+'<br>średnia ocen: '+(suma/taboceny.length).toFixed(2)+'<br>jedynek: '+jedynki+'<br>dwójek: '+dwojki;
         }
+
+
     </script>
 
 
