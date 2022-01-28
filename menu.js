@@ -12,4 +12,5 @@ document.write(
 '<a href="'+adres+'videło.html"><img src="'+adres+'menu/video.png" alt="Video" title="Video"></a>'+
 '<a href="'+adres+'galeria/thumb.html"><img src="'+adres+'menu/galeria.png" alt="galeria" title="Galeria"></a>'+
 '<a href="'+adres+'js.html"><img src="'+adres+'menu/javascript.png" alt="javascript" title="Javascript"></a>'+
+'<a href="'+adres+'odsylacz.html"><img src="'+adres+'menu/odsylacz.png" alt="odsylacz" title="Odsyłacz"></a>'+
 '</header><section>');
