@@ -9,14 +9,36 @@
 <body>
 
     ocena: <input type="number" min="1" max="6" id="ocena">
-    <input type="button" value="dodaj ocenę" onclick="dodaj()">
-    <input type="button" value="usuń ocenę" onclick="usun()">
+    <input type="button" value="dodaj ocenę" onclick="new(1)">
+    <input type="button" value="usuń ocenę" onclick="new(0)">
     <p id="kom"></p>
 
 
 
     <script>
         let taboceny = new Array();
+
+        function new(war){
+          let ocena=parseInt(document.getElementById('ocena').value);
+          if(war==1){
+            if (ocena>=1 && ocena<=6) {taboceny.push(ocena)};
+           }
+
+           if(war==1){
+           if (ocena>=1 && ocena<=6) {
+            
+            for(let i=0; i<taboceny.length; i++) {
+              a=0;
+              if(taboceny[i]==ocena){taboceny.splice(i, 1); a=1; break;};
+            } if (a==0) {alert("nie ma takiej oceny")}
+          }
+        }
+
+        }
+
+
+
+
         function dodaj(){
             let ocena=parseInt(document.getElementById('ocena').value);
             if (ocena>=1 && ocena<=6) {taboceny.push(ocena)};
