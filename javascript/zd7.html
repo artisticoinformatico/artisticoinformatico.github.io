@@ -9,8 +9,8 @@
 <body>
 
     ocena: <input type="number" min="1" max="6" id="ocena">
-    <input type="button" value="dodaj ocenę" onclick="new(1)">
-    <input type="button" value="usuń ocenę" onclick="new(0)">
+    <input type="button" value="dodaj ocenę" onclick="new_ocena(1)">
+    <input type="button" value="usuń ocenę" onclick="new_ocena(0)">
     <p id="kom"></p>
 
 
@@ -18,58 +18,18 @@
     <script>
         let taboceny = new Array();
 
-        function new(war){
+        function new_ocena(war){
           let ocena=parseInt(document.getElementById('ocena').value);
-          if(war==1){
-            if (ocena>=1 && ocena<=6) {taboceny.push(ocena)};
-           }
-
-           if(war==1){
-           if (ocena>=1 && ocena<=6) {
-            
+          if (war==1){if (ocena>=1 && ocena<=6) {taboceny.push(ocena)};} else if (war==0) {
+            let a=0;
+            if (ocena>=1 && ocena<=6) {
             for(let i=0; i<taboceny.length; i++) {
-              a=0;
-              if(taboceny[i]==ocena){taboceny.splice(i, 1); a=1; break;};
-            } if (a==0) {alert("nie ma takiej oceny")}
-          }
-        }
-
-        }
-
-
-
-
-        function dodaj(){
-            let ocena=parseInt(document.getElementById('ocena').value);
-            if (ocena>=1 && ocena<=6) {taboceny.push(ocena)};
-
-            let suma=0;
-          let dwojki=0;
-          let jedynki=0;
-          let trojki=0;
-          let czworki=0;
-          let piatki=0;
-          let szostki=0;
-          for(let i=0; i<taboceny.length; i++) {suma +=taboceny[i]};
-          for(let i=0; i<taboceny.length; i++) {
-            if (taboceny[i] == 1) {jedynki++} else if (taboceny[i]==2) {dwojki++} else if (taboceny[i]==3) {trojki++} else if (taboceny[i]==4) {czworki++} else if (taboceny[i]==5) {piatki++} else if (taboceny[i]==6) {szostki++}
+                a=0;
+                if(taboceny[i]==ocena){taboceny.splice(i, 1); a=1; break;};
+              } if (a==0) {alert("nie ma takiej oceny")}
+            }
           }
 
-          document.getElementById('kom').innerHTML='Twoje oceny: '+taboceny.join(', ')+'<br>średnia ocen: '+(suma/taboceny.length).toFixed(2)+'<br>jedynek: '+jedynki+'<br>dwójek: '+dwojki+'<br>trójek: '+trojki+'<br>czwórek: '+czworki+'<br>piątek: '+piatki+'<br>szóstek: '+szostki;
-        }
-
-
-
-        function usun(){
-          let ocena=parseInt(document.getElementById('ocena').value);
-          let a=0;
-          if (ocena>=1 && ocena<=6) {
-            
-            for(let i=0; i<taboceny.length; i++) {
-              a=0;
-              if(taboceny[i]==ocena){taboceny.splice(i, 1); a=1; break;};
-            } if (a==0) {alert("nie ma takiej oceny")}
-          }
 
           let suma=0;
           let dwojki=0;
@@ -84,7 +44,9 @@
           }
 
           document.getElementById('kom').innerHTML='Twoje oceny: '+taboceny.join(', ')+'<br>średnia ocen: '+(suma/taboceny.length).toFixed(2)+'<br>jedynek: '+jedynki+'<br>dwójek: '+dwojki+'<br>trójek: '+trojki+'<br>czwórek: '+czworki+'<br>piątek: '+piatki+'<br>szóstek: '+szostki;
+
         }
+
 
 
     </script>
