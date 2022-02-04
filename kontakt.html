@@ -10,12 +10,12 @@
 <body>
     <script src="menu.js"></script>
 
-    <a href="http://"> miejsce na maila</a>
+    <a href="http://"> (miejsce na maila)</a>
 
-    <form action="mail">
-        imię:<br> <input type="text"><br><br>
-        nazwisko:<br> <input type="text"><br><br>
-        pytanie:<br> <textarea name="" cols="30" rows="10"></textarea>
+    <form action="mailto:" method="post" enctype="text/plain">
+        imię:<br> <input type="text" name="imie"><br><br>
+        email:<br> <input type="text" name="email"><br><br>
+        pytanie:<br> <textarea name="pytanie" cols="30" rows="10"></textarea>
         <br>
         <input type="submit" value="wyślij">
 
