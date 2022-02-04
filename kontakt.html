@@ -10,18 +10,20 @@
 <body>
     <script src="menu.js"></script>
 
-    <a href="http://"> (miejsce na maila)</a>
+    <a href="mailto:"> (miejsce na maila)</a>
 
-    <form action="mailto:" method="post" enctype="text/plain">
-        imię:<br> <input type="text" name="imie"><br><br>
-        email:<br> <input type="text" name="email"><br><br>
-        pytanie:<br> <textarea name="pytanie" cols="30" rows="10"></textarea>
+  <br><hr>
+
+    <form action="mailto: subject=Pytanie" method="post" enctype="text/plain">
+        imię:<br> <input type="text" name="imie"  required ><br><br>
+        email:<br> <input type="email"name="email"  required ><br><br>
+        pytanie:<br> <textarea name="pytanie" cols="30" rows="10"  required ></textarea>
         <br>
         <input type="submit" value="wyślij">
 
 
     </form>
-
+    <hr>
     <div style="text-align: center;">
       <a href="tel:666 666 666"><img style="width: 20vw; height:20vw"src="uwuphone.gif" alt="telefon"></a>
       <p>tel: mu be kwa kwa kwa kwa</p>
