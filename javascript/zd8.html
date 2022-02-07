@@ -13,18 +13,17 @@
 
 
     <script>
-      let tekst='AB';
-      tekst+='CD';
+      let text='ale jak to można pracować przy komputerze'
+      for(let i=0; i<text.length;i++){
+        if(i%2==0) {document.write(text[i].toLowerCase());} else {
+          document.write(text[i].toUpperCase());
+        }
 
-      tekst+='<ul>'+
-        '<li>Kasia</li>'+
-        '<li>Kasia</li>'+
-        '<li>Ania</li>'+
-        '<li>Hania</li>'+
-        '</ul>'
 
-      tekst+='<br>KONIEC!';
-      document.write(tekst);
+
+
+      }
+
 
     </script>
   </body>
