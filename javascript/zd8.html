@@ -15,8 +15,8 @@
     <script>
       let text='ale jak to można pracować przy komputerze'
       for(let i=0; i<text.length;i++){
-        if(i%2==0) {document.write(text[i].toLowerCase());} else {
-          document.write(text[i].toUpperCase());
+        if(i%2==0) {document.write('<span style="color:green;">'+text[i].toLowerCase()+'</span>');} else {
+          document.write('<span style="color:red;">'+text[i].toUpperCase()+'</span>');
         }
 
 
