@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        pesel=010112;
+        let liczba=parseInt(pesel[2]+pesel[3]);
+        let liczba_dzien=parseInt(pesel[4]+pesel[5]);
+        if(pesel[2]>3 || (pesel[2]<=1 && liczba>12) || (pesel[2]==2 && liczba>22) || (pesel[2]==3 && liczba>32) || liczba_dzien>31) {
+            document.write('Błąd daty kekw');
+        } else
+        {
+            //dzień
+            let tekst=pesel+'<br><h2>Data urodzenia</h2>'+pesel[4]+pesel[5]+'.';
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
