@@ -9,15 +9,18 @@
 <body>
 
     <script>
-        pesel=010112;
+        let pesel='010112';
+
         let liczba=parseInt(pesel[2]+pesel[3]);
         let liczba_dzien=parseInt(pesel[4]+pesel[5]);
-        if(pesel[2]>3 || (pesel[2]<=1 && liczba>12) || (pesel[2]==2 && liczba>22) || (pesel[2]==3 && liczba>32) || liczba_dzien>31) {
+
+        if(pesel[2]>3 || (pesel[2]<=1 && liczba>12) || (pesel[2]==2 && liczba>22) || (pesel[2]==3 && liczba>32) || liczba_dzien>31 || (pesel[3]==2 && liczba_dzien>28) || ((liczba==4 || liczba==6 liczba==9 ||liczba==11 ) && liczba_dzien>30)) {
             document.write('Błąd daty kekw');
         } else
         {
             //dzień
             let tekst=pesel+'<br><h2>Data urodzenia</h2>'+pesel[4]+pesel[5]+'.';
+        
 
 
 
