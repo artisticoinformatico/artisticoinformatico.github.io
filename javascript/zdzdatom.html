@@ -7,7 +7,34 @@
     <title>Document</title>
 </head>
 <body>
+    
     <script>
+
+     
+    let data=new Date();
+
+    function zegar(data){
+        let data=new Date();
+        let sek=data.getSeconds();
+        let min=data.getMinutes();
+        let godz=data.getHours();
+
+        let wypis='Dziś jest'+dzien(data.getDay())+' '+data.getDate()+' ';
+
+
+    }
+
+
+    function datus(data){
+
+        let mies=data.getMonth()+1;
+        let dzien=data.getDate();
+
+        return  data.getFullYear()+'-'+
+                (mies<10?'0'+mies:mies)+'-'+
+                (dzien<10?'0'+dzien:dzien);
+    }
+    document.write('<input type="date" value="'+datus(data)+'"><br>'+'<p id="kom"></p>');   
     
     //let data = new Date();
     //document.write('Dzisiaj mamy: '+data.getDate()+'.'+data.getMonth()+'.'+data.getFullYear());
@@ -26,23 +53,10 @@
         //else if(numerm==9) return 'październik';
         //else if(numerm==10) return 'listopad';
         //else if(numerm==11) return 'grudzień';
-
-
     //}
 
-    let data=new Date();
 
-    function datus(data){
-
-        let mies=data.getMonth()+1;
-        let dzien=data.getDate();
-
-        return  data.getFullYear()+'-'+
-                (mies<10?'0'+mies:mies)+'-'+
-                (dzien<10?'0'+dzien:dzien);
-    }
-    document.write('<input type="date" value="'+datus(data)+'"><br>');
-    document.write(datus(data));
+    
 
 
     </script>
