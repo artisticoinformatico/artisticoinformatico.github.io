@@ -9,53 +9,93 @@
 <body>
     
     <script>
+function nazwa_miesiaca(nrm){
 
-     
+if(nrm==0) return "Stycznia";
+if(nrm==1) return "Lutego";
+if(nrm==2) return "Marca";
+if(nrm==3) return "Kwietnia";
+if(nrm==4) return "Maja";
+if(nrm==5) return "Czerwca";
+if(nrm==6) return "Lipca";
+if(nrm==7) return "Sierpnia";
+if(nrm==8) return "Września";
+if(nrm==9) return "Października";
+if(nrm==10) return "Listopada";
+if(nrm==11) return "Grudnia";
+}
+function dzien(dzn){
+if(dzn==0) return "Niedziela";
+if(dzn==1) return "Poniedziałek";
+if(dzn==2) return "Wtorek";
+if(dzn==3) return "Środa";
+if(dzn==4) return "Czwartek";
+if(dzn==5) return "Piątek";
+if(dzn==6) return "Sobota";
+}
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+//funkcja zwraca date w postaci rrrr-mm-dd
+function DataOdDo(data){
+
+
+
+let mies=data.getMonth()+1;
+let dzien=data.getDate();
+
+return data.getFullYear()+'-'+
+(mies<10?'0'+mies:mies)+'-'+
+(dzien<10?'0'+dzien:dzien);
+}
+
+function pisz_data(){
+
     let data=new Date();
+    let sek=data.getSeconds();
+    let min=data.getMinutes();
+    let godz=data.getHours();
 
-    function zegar(data){
-        let data=new Date();
-        let sek=data.getSeconds();
-        let min=data.getMinutes();
-        let godz=data.getHours();
-
-        let wypis='Dziś jest'+dzien(data.getDay())+' '+data.getDate()+' ';
-
-
-    }
-
-
-    function datus(data){
-
-        let mies=data.getMonth()+1;
-        let dzien=data.getDate();
-
-        return  data.getFullYear()+'-'+
-                (mies<10?'0'+mies:mies)+'-'+
-                (dzien<10?'0'+dzien:dzien);
-    }
-    document.write('<input type="date" value="'+datus(data)+'"><br>'+'<p id="kom"></p>');   
+    let wypis=("<h2>"+"DziĹ jest: "+dzien(data.getDay())+(" ")+data.getDate()+(" ")+
+    nazwa_miesiaca(data.getMonth())+(" ")+data.getFullYear()+"<br>"+
     
-    //let data = new Date();
-    //document.write('Dzisiaj mamy: '+data.getDate()+'.'+data.getMonth()+'.'+data.getFullYear());
+    "Jest godzina: ");
+    
+    if(godz<10) wypis+='0'+godz+(":");
+    else wypis+=godz+(":");
+    
+    if(min<10) wypis+='0'+min+(":");
+    else wypis+=min+(":");
+    
+    if(sek<10) wypis+='0'+sek;
+    else wypis+=sek;
 
-    //function miesiac(numerm){
-        
-        //if(numerm==0) return 'styczeń';
-        //else if(numerm==1) return 'luty';
-        //else if(numerm==2) return 'marzec';
-        //else if(numerm==3) return 'kwiecień';
-        //else if(numerm==4) return 'maj';
-        //else if(numerm==5) return 'czerwiec';
-        //else if(numerm==6) return 'lipiec';
-        //else if(numerm==7) return 'sierpień';
-        //else if(numerm==8) return 'wrzesień';
-        //else if(numerm==9) return 'październik';
-        //else if(numerm==10) return 'listopad';
-        //else if(numerm==11) return 'grudzień';
-    //}
+    let data_pobrana=document.getElementById('data_pobrana').value;
+
+    
+    wypis+='<br> Data z pola: ';
+
+        let Year=data_pobrana.substr(0,4);
+        let Month=data_pobrana.substr(5,2)-1;
+        let Day=data_pobrana[8]+data_pobrana[9];
+    
+        let data_zpola=new Date(Year, Month, Day);
+        wypis+=dzien(data_zpola.getDay())+' '+data_zpola.getDate()+' '+nazwa_miesiaca(data_zpola.getMonth())+ ' '+data_zpola.getFullYear()+'</h2>';
+    
+        data_dzis.gettime();
+        data_zpola>gettime();
+    
+        document.getElementById('kom').innerHTML=wypis;
+    
+    
+    }
 
 
+
+
+
+
+    
+    
     
 
 
