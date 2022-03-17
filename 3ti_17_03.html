@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="kom"></div>
+    <script>
+
+
+        
+
+
+
+
+        function zegar() {
+        let data=new Date();
+       // document.getElementById('kom').innerHTML=('<img src="cyfry/'+data.getSeconds()+'.jpg" alt="">');
+       
+        let x=data.getSeconds();
+        let dz=Math.floor(x/10);
+        let jedn=x-10*dz;
+
+        //document.getElementById('kom').innerHTML=(dz+':'+jedn);
+         document.getElementById('kom').innerHTML=('<img src="cyfry/'+dz+'.jpg" alt="">'+'<img src="cyfry/'+jedn+'.jpg" alt="">');
+    
+    
+    }
+
+
+
+
+
+        setInterval(function(){zegar()}, 1000);
+    </script>
+
+
+
+
+</body>
+</html>
