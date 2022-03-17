@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../javascript/f_czasu.js"></script>
+</head>
+<body>
+    
+    <script>
+
+        
+            let data_dzis = new Date();
+
+            document.write('<input id="data_pobrana" type="date" value="'+DataOdDo(data_dzis)+'"><br>'+'<p id="kom"></p>');
+
+
+            setInterval(function() {
+            let data1=new Date();
+            pisz_data(data1) }, 1000);
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    </script>
+</body>
+</html>
