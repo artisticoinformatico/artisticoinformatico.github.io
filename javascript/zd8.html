@@ -15,7 +15,7 @@
     <script>
       let text='i m calling your manager';
       //let text='ale jak to można pracować przy komputerze';
-      for(let i=0; i<text.length;i++){
+      /*for(let i=0; i<text.length;i++){
         if(i%2==0) {document.write('<span style="color:green;">'+text[i].toLowerCase()+'</span>');} else {
           document.write('<span style="color:red;">'+text[i].toUpperCase()+'</span>');
         }
@@ -24,7 +24,25 @@
 
 
       }
+        function konwert(tekst, dm, kolor='black')
+        {
+          if(dm==1){tekst=tekst.toUpperCase();}
+          else if(dm==0){tekst=tekst.toLowerCase();}
 
+          return tekst.fontcolor(kolor);
+        }
+
+
+        document.write(konwert('BaSia', 1, 'red'))*/
+
+
+        let pesel="54111412457";
+        let tekst=pesel+'<br>'+'<h2>Data urodzenia</h2>'+pesel[4]+pesel[5]+'.'+pesel[2]+pesel[3]+'.';
+
+        if(tekst[2]>1){tekst+='19'+pesel[0]+pesel[1]}
+        else {tekst+='20'+pesel[0]+pesel[1]}
+
+        document.write(tekst)
 
     </script>
   </body>
