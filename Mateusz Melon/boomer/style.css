@@ -1,0 +1,40 @@
+body {
+  width: 90%;
+  background-color: black;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 24px;
+}
+
+
+header {
+  background-color: rgb(218, 144, 34);
+  padding: 25px;
+  text-align: center;
+}
+
+section {
+  background-color: blanchedalmond;
+  padding: 10px;
+  min-height: 400px;
+}
+
+footer {
+  background-color: rgb(218, 144, 34);
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.beczka {
+  height: 80px;
+}
+
+.bloczekkartofel {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
