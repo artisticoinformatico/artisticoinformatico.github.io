@@ -1,0 +1,112 @@
+<a> - kotwica
+<abbr> - skrót
+<acronym> - akronim
+<address> - adres
+<area> - obszar
+<article> - artykuł
+<aside> - treść poboczna, powiązana z treścią artykułu
+<audio> - kontener pliku dźwiękowego
+<b> - pogrubienie czcionki
+<base> - adres bazowy
+<basefont> - czcionka bazowa
+<bdo> - kierunek tekstu
+<big> - zwiększenie czcionki
+<blockquote> - cytat blokowy
+<body> - ciało dokumentu
+<br> - przełamanie wiersza
+<button> - przycisk
+<canvas> - kontener do renderowania grafiki
+<caption> - podpis tabeli
+<center> - środkowanie
+<cite> - cytat
+<code> - czcionka kodu
+<col> - kolumna
+<colgroup> - grupa kolumn
+<command> - polecenie wywoływane przez użytkownika
+<datalist> - lista danych w funkcji autouzupełniania
+<dd> - treść definicji
+<del> - usunięty tekst
+<details> - pełna treść elementu
+<dfn> - definicja
+<div> - wycinek
+<dl> - lista definicji
+<dt> - hasło definicji
+<em> - emfaza czcionki
+<embed> - interfejs osadzonego zasobu zewnętrznego
+<fieldset> - grupa elementów formularza
+<figcaption> - podpis dla grupy elementów
+<figure> - grupa treści multimedialnych z podpisem
+<font> - czcionka
+<footer> - stopka strony lub fragmentu dokumentu
+<form> - formularz
+<frame> - ramka
+<frameset> - układ ramek
+<h1-h6> - śródtytuły
+<head> - nagłówek dokumentu
+<header> - nagłówek strony lub fragmentu dokumentu
+<hgroup> - nagłówek sekcji zawierającej wiele śródtytułów
+<hr> - pozioma linia
+<html> - szkielet dokumentu
+<i> - pochylenie czcionki
+<iframe> - pływająca ramka
+<img> - ilustracja
+<input> - pole formularza
+<ins> - wstawiony tekst
+<kbd> - czcionka z klawiatury
+<label> - etykieta kontrolki formularza
+<legend> - tytuł grupy elementów formularza
+<li> - element wykazu
+<link> - powiązanie dokumentu
+<map> - mapa graficzna
+<mark> - wyróżnienie ciągu znaków
+<menu> - 
+<meta> - własności dokumentu
+<meter> - kontener określający wartość w przedziale
+<nav> - sekcja dokumentu zawierająca nawigację
+<noframes> - alternatywa ramek
+<noscript> - alternatywa skryptu
+<object> - obiekt multimedialny
+<ol> - wykaz uporządkowany
+<optgroup> - grupowanie opcji w formularzu
+<option> - opcja w formularzu
+<output> - definicja postępu zadania
+<p> - akapit
+<param> - parametr obiektu
+<pre> - blok preformatowany
+<progress> - reprezentacja postępu zadania
+<q> - cytat w wierszu
+<ruby> - element anotacji Ruby
+<rp> - element anotacji Ruby
+<rt> - element anotacji Ruby
+<s> - czcionka przekreślona
+<samp> - czcionka przykładu
+<script> - definicja skryptu
+<section> - sekcja grupująca treść
+<select> - rozwijane pole formularza
+<small> - zmniejszenie czcionki
+<source> - źródło zasobów multimedialnych
+<span> - blok liniowy
+<strike> - czcionka przekreślona
+<strong> - silne wyróżnienie czcionki
+<style> - styl
+<sub> - indeks dolny czcionki
+<summary> - podsumowanie widocznego fragmentu treści details
+<sup> - indeks górny czcionki
+<table> - tabela
+<tbody> - ciało tabeli
+<td> - komórka tabeli
+<textarea> - pole tekstowe formularza
+<tfoot> - stopka tabeli
+<th> - nagłówek kolumny tabeli
+<thead> - nagłówek tabeli
+<time> - data/czas
+<title> - tytuł dokumentu
+<tr> - wiersz tabeli
+<track> - ścieżka tekstowa w wideo
+<tt> - czcionka "maszynowa"
+<u> - podkreślenie czcionki
+<ul> - wykaz nieuporządkowany
+<var> - nazwa zmiennej
+<video> - kontener treści wideo
+<wbr> - przełamanie wyrazu
+<!DOCTYPE> - standard języka dokumentu
