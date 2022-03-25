@@ -5,7 +5,7 @@ let klikniecia=0;
 let wartosc=1;
 
 if (checkCookie('pkt')){
-  pkt = getCookie('pkt');
+  pkt = parseFloat(getCookie('pkt'));
 }
 
 function lewyxd() {
