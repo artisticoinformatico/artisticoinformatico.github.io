@@ -10,8 +10,11 @@ if (localStorage.pkt && localStorage.wszystkie && localStorage.klikniecia) {
   klikniecia = parseInt(localStorage.klikniecia);
 }
 
+if (localStorage.lvl) {
+  lvl = parseInt(localStorage.lvl);
+}
 
-
+document.getElementById("pkt_teraz").innerHTML=parseInt(pkt);
 
 
 
@@ -28,36 +31,3 @@ function lewyxd() {
   localStorage.wszystkie = wszystkie;
 
 }
-
-
-
-
-
-
-/*
-function setCookie(cnazwa, cwartosc) {
-  document.cookie = cnazwa + "=" + cwartosc + ";path=/";
-}
-
-function getCookie(cnazwa) {
-  let cnazwa_zeznakiem = cnazwa + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(cnazwa_zeznakiem) == 0) {
-      return c.substring(cnazwa_zeznakiem.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie(nazwa_spr) {
-  let cooki = getCookie(nazwa_spr);
-  if (cooki != "")
-  {return true;} else
-    {return false;}
-}
-*/
