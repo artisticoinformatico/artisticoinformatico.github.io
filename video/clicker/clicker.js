@@ -8,13 +8,14 @@ if (localStorage.pkt && localStorage.wszystkie && localStorage.klikniecia) {
   pkt = parseFloat(localStorage.pkt);
   wszystkie = parseFloat(localStorage.wszystkie);
   klikniecia = parseInt(localStorage.klikniecia);
+  document.getElementById("pkt_teraz").innerHTML=parseInt(pkt);
 }
 
 if (localStorage.lvl) {
   lvl = parseInt(localStorage.lvl);
 }
 
-document.getElementById("pkt_teraz").innerHTML=parseInt(pkt);
+
 
 
 
