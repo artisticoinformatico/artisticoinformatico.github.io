@@ -14,4 +14,5 @@ document.write(
 '<a href="'+adres+'galeria/thumb.html"><img src="'+adres+'menu/galeria.png" alt="galeria" title="Galeria"></a>'+
 '<a href="'+adres+'js.html"><img src="'+adres+'menu/javascript.png" alt="javascript" title="Javascript"></a>'+
 '<a href="'+adres+'odsylacz.html"><img src="'+adres+'menu/odsylacz.png" alt="odsylacz" title="Odsyłacz"></a>'+
+'<a href="'+adres+'html5.html"><img src="'+adres+'menu/html.png" alt="html5" title="Html5"></a>'+
 '</header><section>');
