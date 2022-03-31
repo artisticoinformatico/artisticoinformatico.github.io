@@ -78,3 +78,4 @@ function pisz_data(){
            if(czas>=0) {
            wypis+='<br> Od dnia ';
           }
+        }

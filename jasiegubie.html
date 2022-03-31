@@ -10,11 +10,30 @@
     
     <script>
 
-            for(let i=1; 1<=6; i++){
-            document.write(Math.floor(Math.random()*10+1)+', ');
+
+
+        let tab=new Array();
+        let los;
+        let ile_losowan=1000;
+        for(let i=0; i<=10; i++) {
+            tab[i]=0
+        }
+
+
+
+
+        for(let i=1; i<=ile_losowan; i++){
+            los = Math.round(Math.random()*49+1);
+            //document.write(los+', ');
+            tab[los]++;
             }
        
 
+
+        document.write('<br>');
+        for(i=1; i<tab.length; i++) {
+            document.write(i+': '+tab[i]+'- '+(tab[i]*100).toFixed(2)+'%<br>')
+        }
 
         /*
         let x=1.976879780;
