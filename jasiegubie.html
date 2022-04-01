@@ -7,11 +7,57 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Losowanie od 1 do 10</h1>
+
+    <input type="number" id="liczba">
+    <input type="button" value="Sprawdź" onclick="spr()">
+    <h2 id="kom"></h2>
     
     <script>
 
+        let los=Math.floor(Math.random()*10+1)
+        document.write(los);
+        let ile=0;
+        let komunikat=''
 
 
+        function spr(){
+            ile++
+
+            let liczba=document.getElementById('liczba').value;
+
+            if(liczba==los){
+                document.getElementById('kom').innerHTML='Liczbę "'+los+'" odgadłeś za '+ile+' razem.<br>';
+            }
+            else{
+                if(liczba<los){
+                document.getElementById('kom').innerHTML=liczba+'- Mało<br>';
+                }
+                else{
+                    document.getElementById('kom').innerHTML=liczba+'- Za dużo<br>';
+                }
+            }
+            
+
+        }     
+
+        /*let wylosuj=13;
+                let ile=0;
+
+                while(1){
+                    ile++;
+                    if(Math.floor(Math.random()*1000+1)==wylosuj) break;
+                }
+                document.write(wylosuj+" losowano: "+ile);*/
+
+
+
+
+
+
+
+
+        /*
         let tab=new Array();
         let los;
         let ile_losowan=1000;
@@ -33,8 +79,13 @@
         document.write('<br>');
         for(i=1; i<tab.length; i++) {
             document.write(i+': '+tab[i]+'- '+(tab[i]*100).toFixed(2)+'%<br>')
-        }
+        }*/
 
+      
+
+       
+
+        
         /*
         let x=1.976879780;
         let y=1.976879780;
