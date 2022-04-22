@@ -7,21 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-    <input type="text"required>
-    <input type="submit" value="licz">
-    </form>
+    <input id="kek" type="text"required>
+    <input type="button" value="kebab" onclick="spr()">
 
-    <br><br>
-
-    <input type="text"required>
-    <input type="button" value="kebab">
+    <p id="kom"></p>
 
     <script>
-        let flaczki=new RegExp();
+        
+
+        function spr(){
+            let wyraz=document.getElementById('kek').value;
+            let flaczki=new RegExp("Pies","i");
+
+            if(flaczki.test(wyraz)){
+                document.getElementById('kom').innerHTML="OK";
+            }
+            else{
+                document.getElementById('kom').innerHTML="ERROR";
+            }
+        }
 
 
     </script>
 
+
+
+
+    <!--
+        <form action="">
+        <input type="text"required>
+        <input type="submit" value="licz">
+        </form>
+
+        <br><br>
+        -->
 </body>
 </html>
