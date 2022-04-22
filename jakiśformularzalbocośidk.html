@@ -17,7 +17,11 @@
 
         function spr(){
             let wyraz=document.getElementById('kek').value;
-            let flaczki=new RegExp("Pies","i");
+            //zaczyna się od a
+            let flaczki=new RegExp("^a");
+
+            //zaczyna się na a, kończy na b
+            flaczki=new RegExp("^a[a-z 0-9ąśćłżź]*b$");
 
             if(flaczki.test(wyraz)){
                 document.getElementById('kom').innerHTML="OK";
