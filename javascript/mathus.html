@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    f(x)= &radic;<span style="border-top: solid 1px;"> x<sup>4</sup>+x<sup>2</sup>+1 </span>
+    
+    <br><br>
+    x=<input id="x" type="number" style="width: 50px;">
+    <input type="button" value="oblicz f(x)" onclick="licz()">  
+    <p id="kom"></p>
+
+    <script>
+        function licz(){
+        let x=document.getElementById('x').value;
+        
+        if(x){
+        let y=Math.pow(x,4)+Math.pow(x,2)+1;
+
+        document.getElementById('kom').innerHTML='f('+x+') ='+
+        '&radic;<span style="border-top: solid 1px;">'+y+' </span> = '+Math.sqrt(y).toFixed(2);
+        }
+
+        else{ document.getElementById('kom').innerHTML='Podaj cokolwiek'}
+    }
+
+    </script>
+
+
+</body>
+</html>
