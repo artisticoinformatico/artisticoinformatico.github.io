@@ -18,12 +18,12 @@
         function spr(){
             let wyraz=document.getElementById('kek').value;
             //zaczyna się od a
-            let flaczki=new RegExp("^a");
+            let flaczki=new RegExp();
 
             //zaczyna się na a, kończy na b
-            flaczki=new RegExp("^a[a-z 0-9ąśćłżź]*b$");
-
-            flaczki=new RegExp("^a[a-z 0-9óąśćłżź]*b$");
+            //flaczki=new RegExp("^a[a-z 0-9ąśćłżź]*b$","i");
+           //data urodzenia  RRRR-MM-DD 
+            flaczki=new RegExp("^[0-9]{4}-[0-1]{2}[0-9]{1}-[0-9]{2}$ ");
 
             if(flaczki.test(wyraz)){
                 document.getElementById('kom').innerHTML="OK";
