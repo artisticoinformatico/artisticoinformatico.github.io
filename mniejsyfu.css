@@ -33,3 +33,8 @@ section {
     transform: rotate(359deg);
   }
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
