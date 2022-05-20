@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="klik" onclick="tyst()" ondblclick="flyst()">
+
+    <input type="button" value="klik2" onmousedown="tyst()" onmouseup="kask()">
+
+    <input type="button" value="klik3" onmouseover="tyst()" onmouseout="flyst()">
+
+    <input type="button" value="klik3" onmouseover="tyst()" onmouseout="flyst()">
+    
+    <h1 id="kom"></h1>
+    <script>
+
+        function tyst(){
+            document.getElementById('kom').innerHTML='robi wrażenie';
+        }
+
+        function flyst(){
+            document.getElementById('kom').innerHTML='nie robi wrażenia';
+        }
+
+        function kask(){
+            document.getElementById('kom').innerHTML='';
+        }
+    </script>
+
+
+
+
+</body>
+</html>
