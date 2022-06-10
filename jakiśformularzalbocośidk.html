@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="kek" type="text"required>
+    <input id="kek" type="text" required>
     <input type="button" value="kebab" onclick="spr()">
 
     <p id="kom"></p>
 
     <script>
-        
+
 
         function spr(){
             let wyraz=document.getElementById('kek').value;
@@ -22,7 +22,7 @@
 
             //zaczyna się na a, kończy na b
             //flaczki=new RegExp("^a[a-z 0-9ąśćłżź]*b$","i");
-           //data urodzenia  RRRR-MM-DD 
+           //data urodzenia  RRRR-MM-DD
             flaczki=new RegExp("^[0-9]{4}-[0-1]{2}[0-9]{1}-[0-9]{2}$ ");
 
             if(flaczki.test(wyraz)){
